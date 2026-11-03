@@ -1,0 +1,42 @@
+{
+    "name": "microweber-packages/microweber-role",
+    "description": "Microweber CMS.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://microweber.com",
+    "authors": [
+        {
+            "name": "Microweber",
+            "email": "info@microweber.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "~5.6",
+        "illuminate/database": "^11.0|^13.0",
+        "illuminate/http": "^11.0|^13.0",
+        "illuminate/support": "^11.0|^13.0",
+        "microweber-packages/microweber-config-merge": "*",
+        "microweber-packages/microweber-filament-registry": "*",
+        "microweber-packages/microweber-admin": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MicroweberPackages\\Role\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MicroweberPackages\\Role\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "replace": {
+        "microweber-packages/role": "*"
+    }
+}
